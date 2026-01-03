@@ -1,0 +1,47 @@
+body {
+    background-color: #020000ff;
+}
+
+h1, h2 {
+    color: #b11226;
+    font-weight: 700;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 24px;
+    border-radius: 14px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+    margin-bottom: 20px;
+}
+
+.stButton>button {
+    background-color: #b11226;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 24px;
+    font-weight: 600;
+    border: none;
+}
+
+.stButton>button:hover {
+    background-color: #8e0e1e;
+}
+
+.layak {
+    background-color: #e6f4ea;
+    color: #1e4620;
+    padding: 14px;
+    border-radius: 10px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.tidak-layak {
+    background-color: #fce8e6;
+    color: #611a15;
+    padding: 14px;
+    border-radius: 10px;
+    font-weight: 700;
+    text-align: center;
+}

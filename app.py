@@ -34,20 +34,71 @@ def load_model():
         return pickle.load(f)
 
 model = load_model()
-
 # ===========================
 # INPUT USER
 # ===========================
 st.subheader("Form Data Pendonor")
 
-berat_badan = st.number_input("Berat Badan (kg)", 30.0, 200.0)
-suhu = st.number_input("Suhu Tubuh (°C)", 35.0, 40.0)
-nadi = st.number_input("Nadi (x/menit)", 40.0, 150.0)
-hb = st.number_input("Hemoglobin (g/dL)", 5.0, 20.0)
-hct = st.number_input("Hematokrit (%)", 10.0, 60.0)
-umur = st.number_input("Umur (tahun)", 17.0, 65.0)
-sistole = st.number_input("Tensi Sistole", 80.0, 200.0)
-diastole = st.number_input("Tensi Diastole", 40.0, 120.0)
+berat_badan = st.number_input(
+    "Berat Badan (kg)",
+    min_value=30,
+    max_value=200,
+    step=1,
+    format="%d"
+)
+
+suhu = st.number_input(
+    "Suhu Tubuh (°C)",
+    min_value=35.0,
+    max_value=40.0,
+    step=0.1
+)
+
+nadi = st.number_input(
+    "Nadi (x/menit)",
+    min_value=40,
+    max_value=150,
+    step=1,
+    format="%d"
+)
+
+hb = st.number_input(
+    "Hemoglobin (g/dL)",
+    min_value=5.0,
+    max_value=20.0,
+    step=0.1
+)
+
+hct = st.number_input(
+    "Hematokrit (%)",
+    min_value=10.0,
+    max_value=60.0,
+    step=0.1
+)
+
+umur = st.number_input(
+    "Umur (tahun)",
+    min_value=17,
+    max_value=65,
+    step=1,
+    format="%d"
+)
+
+sistole = st.number_input(
+    "Tensi Sistole",
+    min_value=80,
+    max_value=200,
+    step=1,
+    format="%d"
+)
+
+diastole = st.number_input(
+    "Tensi Diastole",
+    min_value=40,
+    max_value=120,
+    step=1,
+    format="%d"
+)
 
 # ===========================
 # PREDIKSI
